@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Management</title>
+    <link rel="stylesheet" href="member.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Group Logo</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Notification</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="mode">
+            <div class="round"></div>
+        </div>
+    </header>
+
+    <div class="sun"></div>
+
+    <main class="container">
+        <section class="group-info">
+            <h1 class="group-name">Group Name</h1>
+        </section>
+
+        <section class="leader-section">
+            <div class="leader-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_1bpO0XDD8fbmRvnbnkCoQNFFoH3AqofVTg&s" alt="Leader Image" class="leader-image">
+                <div class="leader-details">
+                    <h2>Leader</h2>
+                    <p>Semer Laereder</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="member-title">
+            <h3>Group Members</h3>
+        </div>
+
+        <section class="members-carousel">
+            <div class="members">
+                <div class="member">
+                    <img src="https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg" alt="Member 1">
+                    <p>Anjali S</p>
+                </div>
+                <div class="member">
+                    <img src="https://www.shutterstock.com/image-photo/profile-picture-smiling-successful-young-260nw-2040223583.jpg" alt="Member 2">
+                    <p>Rahul P</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-container">
+            <div class="group-chat">
+                <button id="chat-button" class="chat-button"><i class="fas fa-comments"></i> Group Chat</button>
+            </div>
+            <div class="create-plan">
+                <button id="create-plan" class="create-plan-button"><i class="fas fa-map"></i> Create Plan</button>
+            </div>
+        </section>
+
+        <!-- Group Chat Section -->
+        <section class="chat-section border" id="chat-section" style="display: none;">
+            <div class="chat-header border">
+                <h3>Group Chat</h3>
+                <button id="close-chat" class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input border">
+                <input type="text" id="chat-input" placeholder="Type your message..." />
+                <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </section>
+        <section class="activity-section d-flex">
+            <div class="activity-card border">
+                <h4>rahul patel</h4>
+                <button class="accept-button border">Accept</button>
+                <button class="leader-button border">Reject</button>
+            </div>
+            <div class="activity-card border">
+                <h4>rahul patel</h4>
+                <button class="accept-button border">Accept</button>
+                <button class="leader-button border">Reject</button>
+            </div>
+            <div class="activity-card border">
+                <h4>rahul patel</h4>
+                <button class="accept-button border">Accept</button>
+                <button class="leader-button border">Reject</button>
+            </div>
+            </section>
+    </main>
+
+    <script>
+                // Toggle Dark Mode
+                $(".round").click(() => {
+            $("body").toggleClass("dark-mode");
+
+            if ($("body").hasClass("dark-mode")) {
+                $(".round").animate({
+                    marginLeft: '50px'
+                }, 200);
+            } else {
+                $(".round").animate({
+                    marginLeft: '0px'
+                }, 200);
+            }
+                  });
+
+        $("#chat-button").click(() => {
+    $("#chat-section").fadeIn();
+    $(".activity-section").animate({
+        marginLeft: '-50px'
+    }, 200);
+    $(".activity-section").css("height","200px")
+    $(".activity-section").css("width","1000px")
+    
+});
+
+
+
+
+        $("#close-chat").click(() => {
+            $("#chat-section").fadeOut(100);
+            $(".activity-section").animate({
+        marginLeft: '0px'
+    }, 200);
+    $(".activity-section").css("height","200px")
+    $(".activity-section").css("width","100%")
+        });
+
+        // Group Chat Functionality
+        const messages = $("#chat-messages");
+        const inputField = $("#chat-input");
+
+        $("#send-message").click(() => {
+            const messageText = inputField.val().trim();
+            if (messageText) {
+                const messageElement = $("<div>").addClass("chat-message").text(messageText);
+                messages.append(messageElement);
+                inputField.val("");
+                messages.scrollTop(messages.prop("scrollHeight"));
+            }
+        });
+
+        // Send message on Enter key press
+        inputField.keypress((e) => {
+            if (e.which === 13) {
+                $("#send-message").click();
+            }
+        });
+        
+    </script>
+</body>
+</html>
