@@ -1,0 +1,208 @@
+body {
+    font-family: 'Arial', sans-serif;
+    
+    background-color:#5D80D6  ;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sub-title {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.group-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.group-name {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.option-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between card rows */
+}
+
+.card-item {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width for each card */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.card-item .card {
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .card-item {
+        width: 30%; /* 3 cards in a row on medium to large screens */
+    }
+}
+
+
+.ht1, .ht2, .ht3 {
+    display: flex;
+    margin-top: 20px; /* Add space between the first and second rows */
+    gap: 20px;
+   
+}
+.ht1{
+    margin-left: 25px;
+}
+
+.card-title {
+    font-size: 1rem;
+    color: #333;
+}
+
+h4 {
+    margin-top: 25px;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#yes {
+    background-color: rgb(41, 181, 169);
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#no {
+    background-color: rgb(148, 183, 180);
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.transport-img {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin: 10px;
+}
+
+.transport-img:hover {
+    transform: scale(1.1);
+}
+ht1:hover, ht2:hover,ht3:hover, .card-item:hover, .item1:hover, .item2:hover, .item3:hover {
+    color: #ff5733; /* Change text color on hover */
+    background-color: #f0f0f0; /* Change background color */
+    transform: scale(1.05); /* Slightly increase size on hover */
+    transition: all 0.3s ease; /* Smooth animation effect */
+}
+
+.img {
+    width: 100%; /* Ensure the image takes full width of the card */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* This ensures the image is cropped and centered while maintaining aspect ratio */
+    border-radius: 10px; /* Keep the rounded corners consistent with the card */
+}
+/* Suggestion Section Styling */
+.sg {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-group textarea {
+    resize: none;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.input-group button {
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.btn-sec {
+    margin-top: 80px;
+}
+
+.btn-sec button {
+    width: 150px;
+}
+
+/* General Card Styling */
+.card-item .card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+header {
+    /* position: fixed; */
+    height: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.tsp{
+    border-radius: 20px;
+    background-color: #ddd;
+    height: 200px;
+    width: 200px;
+    margin-left: 320px;
+}
+.header-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

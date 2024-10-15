@@ -1,0 +1,102 @@
+body {
+    background-color: #f7f7f7;
+  }
+  
+  h1 {
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .transport-buttons .btn {
+    border-radius: 30px;
+    margin: 0 10px;
+  }
+  
+  .transport-buttons .btn.active {
+    background-color: #333;
+    color: white;
+  }
+  
+  .mode-card {
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    border: none;
+  }
+  
+  .mode-card.selected {
+    border: 2px solid #333;
+  }
+  
+  .info-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-box h5 {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .btn-success {
+    padding: 10px 40px;
+    border-radius: 30px;
+  }
+  #source
+  {
+    height: 50px;
+    width:  400px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  #destination
+  {
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  .sel-desti{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+  }
+#arrow-btn{
+  height: 50px;
+  width: 250px;
+  border-radius: 5px;
+    border: 2px solid black;
+}
+.bdw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  margin: 10px;
+  font-size: small;
+  margin-top: 20px;
+ 
+
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Remove the default margin */
+  background-color: #ddd;
+  color: white;
+}
+
+.bdw a {
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 50px;
+ 
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.bdw a:hover {
+  background-color: #dc6369;
+}
