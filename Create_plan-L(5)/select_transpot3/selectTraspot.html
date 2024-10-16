@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
 
   <link href="selecttraspot.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="container my-5">
     <div class="text-center">
@@ -20,73 +22,75 @@
       </div>
     </div>
 
-  
-      <div class="sel-desti ">
-        <div class="source">
-          <input type="text" id="source" placeholder="From source">
-       
+
+    <section class="sel-desti d-flex justify-content-between">
+      <div class="source">
+        <input type="text" id="source" placeholder="From source">
+
       </div>
       <button id="arrow-btn">
         <i class="bi bi-arrow-left-right"></i>
 
       </button>
       <div class="destination">
-          <input type="text" id="destination" placeholder="to destination">
-       
+        <input type="text" id="destination" placeholder="to destination">
+
       </div>
+    </section>
+
+    <div class="bdw">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownBudget"
+          aria-expanded="false">
+          Budget
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownBudget">
+          <li><a class="dropdown-item" href="#">Low Budget</a></li>
+          <li><a class="dropdown-item" href="#">Mid Range</a></li>
+          <li><a class="dropdown-item" href="#">Luxury</a></li>
+        </ul>
       </div>
-       
-      <div class="bdw">
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownBudget" aria-expanded="false">
-                Budget
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownBudget">
-                <li><a class="dropdown-item" href="#">Low Budget</a></li>
-                <li><a class="dropdown-item" href="#">Mid Range</a></li>
-                <li><a class="dropdown-item" href="#">Luxury</a></li>
-            </ul>
-        </div>
-    
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownDays" aria-expanded="false">
-                Days
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownDays">
-                <li><a class="dropdown-item" href="#"><input type="date"></a></li>
-                
-            </ul>
-        </div>
-    
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownWeather" aria-expanded="false">
-                select fare
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownWeather">
-                <li><a class="dropdown-item" href="#">GN - Unreserved</a></li>
-                <li><a class="dropdown-item" href="#">SL - Sleeper
-                </a></li>
-                <li><a class="dropdown-item" href="#">3AAC 3-Tier</a></li>
-                <li><a class="dropdown-item" href="#">2A-AC 2-Tier
-                </a></li>
-                <li><a class="dropdown-item" href="#">1A- First Class AC
 
-                </a></li>
-                <li><a class="dropdown-item" href="#">CC-AC Chair Car
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownDays" aria-expanded="false">
+          Days
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownDays">
+          <li><a class="dropdown-item" href="#"><input type="date"></a></li>
+
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownWeather"
+          aria-expanded="false">
+          select fare
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownWeather">
+          <li><a class="dropdown-item" href="#">GN - Unreserved</a></li>
+          <li><a class="dropdown-item" href="#">SL - Sleeper
+            </a></li>
+          <li><a class="dropdown-item" href="#">3AAC 3-Tier</a></li>
+          <li><a class="dropdown-item" href="#">2A-AC 2-Tier
+            </a></li>
+          <li><a class="dropdown-item" href="#">1A- First Class AC
+
+            </a></li>
+          <li><a class="dropdown-item" href="#">CC-AC Chair Car
 
 
-                </a></li>
-                <li><a class="dropdown-item" href="#">EC Executive Chair Car
-                </a></li>
-                <li><a class="dropdown-item" href="#">EA - Executive Anubhuti</a></li>
-                <li><a class="dropdown-item" href="#">2S - Second Sitting
-                </a></li>
-                <li><a class="dropdown-item" href="#">FC - First Class
-                </a></li>
-            </ul>
-        </div>
+            </a></li>
+          <li><a class="dropdown-item" href="#">EC Executive Chair Car
+            </a></li>
+          <li><a class="dropdown-item" href="#">EA - Executive Anubhuti</a></li>
+          <li><a class="dropdown-item" href="#">2S - Second Sitting
+            </a></li>
+          <li><a class="dropdown-item" href="#">FC - First Class
+            </a></li>
+        </ul>
+      </div>
     </div>
-    
+
     <div class="row mt-5">
       <div class="col-md-12 text-center">
         <button class="btn btn-success">Find Train </button>
@@ -94,4 +98,5 @@
     </div>
   </div>
 </body>
+
 </html>

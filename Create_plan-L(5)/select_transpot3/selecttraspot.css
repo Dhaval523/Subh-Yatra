@@ -43,19 +43,18 @@ body {
     padding: 10px 40px;
     border-radius: 30px;
   }
-  #source
+  #source , #destination
   {
     height: 50px;
-    width:  400px;
+    width:  100%;
     border-radius: 5px;
     border: 2px solid black;
   }
-  #destination
+  .source  , .destination
   {
     height: 50px;
-    width: 400px;
-    border-radius: 5px;
-    border: 2px solid black;
+    width: 40%;
+    min-width: 300px;
   }
   .sel-desti{
     display: flex;
