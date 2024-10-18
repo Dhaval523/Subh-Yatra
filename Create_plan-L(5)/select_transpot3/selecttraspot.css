@@ -53,8 +53,9 @@ body {
   .source  , .destination
   {
     height: 50px;
-    width: 40%;
-    min-width: 300px;
+    width: 45%;
+    min-width: 350px;
+    max-width: 496px;
   }
   .sel-desti{
     display: flex;
@@ -64,10 +65,19 @@ body {
   }
 #arrow-btn{
   height: 50px;
-  width: 250px;
+  width: 15%;
+  max-width: 200px ;
+  min-width: 100px;
   border-radius: 5px;
-    border: 2px solid black;
+  border: 2px solid black;
 }
+
+@media (min-width: 992px) { 
+  #arrow-btn .bi::before{
+    content: '\F12B';
+  }
+ }
+
 .bdw {
   display: flex;
   justify-content: center;
